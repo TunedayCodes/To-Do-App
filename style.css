@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700&display=swap');
+
+/* *{
+  box-sizing: border-box;
+} */
+
+body{
+background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+font-family: 'Inconsolata', monospace;
+}
+
+h2{
+  color: #22313f;
+  text-align: center;
+  font-size: 50px;
+}
+
+.fa-plus{
+  float: right;
+}
+
+.container{
+  width: 400px;
+  margin: 100px auto;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+li{
+  height: 50px;
+  line-height: 50px;
+  color: #684b4b;
+}
+
+li:nth-child(2n){
+  background-color: white; 
+  border-radius: 10px;
+  border-bottom: 3px solid pink;
+}
+
+.left{
+  background: pink;
+  height: 40px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 0;
+  opacity: 0;
+  transition: 0.2s linear;
+}
+
+.right{
+  background: pink;
+  height: 40px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 0;
+  opacity: 0;
+  transition: 0.2s linear;
+  position: absolute;
+  right: 0;
+}
+
+li:hover span{
+  margin: 5px;
+  width: 35px;
+  opacity: 1;
+}
+
+.todoinput{
+  width: 600px;
+  font-size: 18px;
+  padding: 30px;
+  outline: none;
+}
+
